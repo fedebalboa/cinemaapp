@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Movie Quiz</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+		<div class="container">
+			
+		<!-- Quiz Start Screen -->
+			<div id="introDiv" class="introDiv">	
+				<img src="images/marquee.png" class="marquee">
+					<a href="" id="enter" class="nav">
+						<img src="images/enter-button.png">
+					</a>
+			</div>
+		
+		<!-- Question Screen -->
+			<div id="questionDiv" class="mainDiv" style="display: none;">
+				<img src="images/ralp.png" id="charIcon">
+				<div id="questionArea">
+					<span class="question">Filler</span></br>
+					
+					<div id="answerSelect">
+						<input type="radio" name="option" class="option" value="0"><span class="answer">Filler</span><br>
+						<input type="radio" name="option" class="option" value="1"><span class="answer">Filler</span><br>
+						<input type="radio" name="option" class="option" value="2"><span class="answer">Filler</span><br>
+						<input type="radio" name="option" class="option" value="3"><span class="answer">Filler</span><br>
+					</div>
+				</div>
+				<a href="" id="submit" class="nav">
+					<img src="images/submit.png">
+				</a>
+			</div>
+
+		<!-- Result Screen -->
+			<div id="resultDiv" class="mainDiv" style="display: none;">
+				<div class="resultPositive" style="display: none;">
+					<img class="result" src="images/correctAnswer.png">
+				</div>
+
+				<div class="resultNegative" style="display: none;">
+					<img class="result" src="images/wrongAnswer.png">
+				</div>
+
+				<span id="explain">
+					
+				</span>
+
+				<a href="" id="cont" class="nav">
+					<img src="images/cont.png">
+				</a>
+			</div>
+
+		<!-- End Screen -->
+			<div id="endDiv" class="mainDiv" style="display: none;">
+				<div class="resultEnd">
+					<img class="result" src="images/finalResults.png">
+				</div>
+
+				<span id="result">
+					Filler
+				</span>
+			
+				<a href="" id="retry" class="nav">
+					<img src="images/retry.png">
+				</a>
+			
+			</div>
+		
+		</div>
+	<script src="jquery.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+	</body>
+
+</html>
